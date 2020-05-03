@@ -1,0 +1,11 @@
+<div ngbDropdown>
+  <div class="px-3 h-100 d-flex align-items-center" id="config" ngbDropdownToggle>
+    <i class="ta-menu fs-32"></i>
+  </div>
+  <div ngbDropdownMenu aria-labelledby="config" class="shadow-sm">
+    <a ngbDropdownItem [routerLink]="router.path" *ngFor="let router of menu">
+      <i [ngClass]="router.icon" class="fs-24 pr-2 align-middle"></i>
+      {{ router.text }}
+    </a>
+  </div>
+</div>

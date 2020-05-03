@@ -1,0 +1,55 @@
+<div class="modal-header">
+    <div class="text-uppercase modal-title text-blue-light fs-24">
+        {{ status ? 'EDITAR VEÍCULO' : 'NOVO VEÍCULO' }}
+    </div>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <i class="ta-times-circle"></i>
+    </button>
+</div>
+
+<div class="modal-body">
+    <form [formGroup]="formVeiculo" (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" id="name" formControlName="name" placeholder="Digite o nome">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Telefone</label>
+            <input type="text" class="form-control" id="phone" formControlName="phone" placeholder="Digite o telefone">
+        </div>
+
+        <div class="form-group">
+            <label for="contact">Cliente</label>
+            <input type="text" class="form-control" id="contact" formControlName="contact" placeholder="Digite o Cliente">
+        </div>
+
+        <div class="form-group">
+            <label for="uniqueId">IMEI</label>
+            <input type="text" class="form-control" id="uniqueId" formControlName="uniqueId" placeholder="Digite o IMEI">
+        </div>
+
+        <div class="form-group">
+            <label for="expirationTime">Data de Expiração</label>
+            <input type="date" class="form-control" id="expirationTime" formControlName="expirationTime">
+        </div>
+
+        <div class="form-group">
+            <div class="text-right">
+                <div class="button btn btn-link" (click)="activeModal.dismiss('cancel')">
+                    Cancelar
+                </div>
+                <button type="submit" class="btn btn-primary" [disabled]="formVeiculo.invalid" *ngIf="status">
+                    <i class="ta-save mr-1"></i>
+                    Salvar Veículo
+                </button>
+                <button type="submit" class="btn btn-primary" [disabled]="formVeiculo.invalid" *ngIf="!status">
+                    <i class="ta-plus-circle mr-1"></i>
+                    Criar Veículo
+                </button>
+            </div>
+        </div>
+        
+    </form>
+</div>

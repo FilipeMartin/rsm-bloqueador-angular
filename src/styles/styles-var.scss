@@ -1,0 +1,192 @@
+@import "./fonts/variables.scss";
+
+$blue: #303F9F;
+$blueLight: #7082a4;
+$blueSky: #cde0ef;
+$green: #259821;
+$green-light: #cfe3cb;
+$green-clear: #77bb6b;
+$yellow: #FEF011;
+$amarelo-claro: #f6e993;
+$red: #d95f5f;
+$orange: #ef6b01;
+
+$cinza: #656565;
+$cinzaClaro: #e8e4e4;
+$cinzaEscuro: #323c47;
+$cinzaClaro1: #f5f5f5;
+$cinzaClaro2: #f8f5f1;
+$cinzaClaro3: #bfcdd5;
+$cinzaClaro4: #b6bec8;
+$cinzaClaro5: #4b4b4b;
+$cinzaClaro6: #e9eff4;
+$cinzaClaro7: #595d66;
+$cinzaClaro8: #d1d1d1;
+$white: #ffffff;
+$purple: #9f5fb2;
+$azul-claro: #67a8d9;
+
+$theme-colors: (
+  "blue": $blue,
+  "blue-light": $blueLight,
+  "blue-sky": $blueSky,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "cinza": $cinza,
+  "cinza-claro": $cinzaClaro,
+  "cinza-claro-1": $cinzaClaro1,
+  "cinza-claro-2": $cinzaClaro2,
+  "cinza-claro-3": $cinzaClaro3,
+  "cinza-claro-4": $cinzaClaro4,
+  "cinza-claro-8": $cinzaClaro8,
+  "cinza-escuro": $cinzaEscuro,
+  "white": $white,
+  "purple": $purple,
+  "azul-claro": $azul-claro,
+  "green-light": $green-light,
+  "amarelo-claro": $amarelo-claro,
+  "green-clear": $green-clear
+);
+
+$font-family-base: "Roboto", sans-serif;
+$font-sizes: 8, 10, 12, 14, 15, 16, 18, 20, 22, 24, 28, 32, 36, 48, 64, 72 !default;
+
+$sizes: (
+  10: 10%,
+  20: 20%,
+  30: 30%,
+  40: 40%,
+  60: 60%,
+  70: 70%,
+  80: 80%,
+  90: 90%
+);
+$spacers: (
+  6: 1rem * 3.5
+);
+
+$body-color: $cinzaClaro5;
+
+$dropdown-padding-y: 0;
+$dropdown-item-padding-y: 8px;
+$dropdown-link-color: $cinzaEscuro;
+$dropdown-link-hover-bg: $blue;
+$dropdown-link-hover-color: #fff;
+
+$modal-backdrop-bg: #fff;
+$modal-backdrop-opacity: 0.75;
+$modal-content-border-radius: 0;
+
+$btn-padding-y: 0.75rem;
+
+$label-margin-bottom: 0.2rem;
+$input-height: 2.5rem;
+//$input-padding-y:1rem;
+
+$icomoon-font-path: "assets/fonts";
+
+$nav-tabs-link-active-color: $blue;
+
+.modal-extra {
+  max-width: 1900px;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.text-underline-hover {
+  &:hover {
+    text-decoration: 1px solid $blue;
+  }
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif !important;
+}
+
+@for $i from 1 through 9 {
+  .font-weight-#{$i}00 {
+    font-weight: $i * 100 !important;
+  }
+}
+
+.list-style-none {
+  list-style: none !important;
+}
+.overflow-x-auto {
+  overflow-x: auto !important;
+}
+
+.bg-inherit {
+  background: inherit !important;
+}
+
+.linha-carrega-mais {
+  position: relative;
+  list-style: none;
+
+  li {
+    text-align: center;
+    background: $cinzaClaro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    span {
+      background: inherit;
+      z-index: 2;
+      padding-right: 10px;
+      padding-left: 10px;
+      position: absolute;
+      top: 0;
+      cursor: pointer;
+      margin: 0 -15px;
+
+      &:hover {
+        border-bottom: $blue solid 1px;
+        color: $blue;
+      }
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.1);
+      height: 1px;
+      right: 0;
+      top: 13px;
+      z-index: 1;
+    }
+  }
+}
+
+ngb-tabset {
+  .tabset,
+  .tab-content,
+  .tab-pane,
+  .tabbable {
+    height: 100% !important;
+  }
+}
+
+.white-space-nowrap {
+  white-space: nowrap !important;
+}
+
+.subModalOpen {
+  // Kill the scroll on the body
+  overflow: hidden !important;
+
+  .subModal {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+}
+
+.align-middle {
+  vertical-align: middle !important;
+}

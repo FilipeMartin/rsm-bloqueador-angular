@@ -1,0 +1,48 @@
+<div class="align-items-center d-flex h-100 justify-content-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <div class="bg-yellow border border-cinza-claro p-4 rounded auth-box">
+          <div class="text-center">
+            <h1>
+              <img src="./assets/logo.png" alt="RSM" width="200">
+            </h1>
+            <h5 class="text-blue-light mb-3">Sistema Administrativo</h5>
+          </div>
+          <div>
+            <form class="position-relative">
+
+              <div class="form-group position-relative">
+                <input type="text" class="form-control form-control-lg pr-5" name="email"
+                       placeholder="Username" [(ngModel)]="login.username" required>
+                <i class="ta-envelope position-absolute text-cinza fs-18"
+                   style="top: 0.8em; right: 1em;"></i>
+              </div>
+              <div class="form-group position-relative">
+                <input type="password" class="form-control form-control-lg pr-5" name="password"
+                       placeholder="Senha" [(ngModel)]="login.password" required>
+                <i class="ta-lock position-absolute text-cinza fs-18"
+                   style="top: 0.8em; right: 1em;"></i>
+              </div>
+              <div class="alert border-red text-red font-weight-bold" *ngIf="errorMessage">
+                <i class="ta-cancel-circle"></i> {{errorMessage}}
+              </div>
+
+              <div class="py-3 d-flex justify-content-between align-items-center">
+                <div class="form-check flex-grow-1">
+                  <input class="form-check-input" type="checkbox" value="" name="rememberme"
+                         id="defaultCheck1" [(ngModel)]="check">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Manter-me logado
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-blue btn-lg" (click)="doLogin($event)">Login</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

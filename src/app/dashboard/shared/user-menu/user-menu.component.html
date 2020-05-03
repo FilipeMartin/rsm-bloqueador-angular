@@ -1,0 +1,13 @@
+<div ngbDropdown>
+  <div class="pl-3 pr-2" id="user" ngbDropdownToggle>
+    <img src="/assets/andre.png" class="avatar rounded-circle mr-2" width="50" height="50" alt="">
+    <u class="font-weight-500">{{auth.username}}</u>
+    <i class="ta-arrow-down fs-28 align-middle"></i>
+  </div>
+  <div ngbDropdownMenu aria-labelledby="user" class="shadow-sm">
+    <a ngbDropdownItem (click)="auth.logout('/login')">
+      <i class="ta-power fs-22 pr-2 align-middle"></i>
+      Logout
+    </a>
+  </div>
+</div>

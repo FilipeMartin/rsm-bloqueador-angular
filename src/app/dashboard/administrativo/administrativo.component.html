@@ -1,0 +1,20 @@
+<main-header></main-header>
+
+<div class="wrap-outlet-projeto">
+  <div class="side-bar">
+    <nav class="side-nav">
+      <!-- <app-loading type="fullparent" background="transparent"></app-loading> -->
+      <ng-container *ngFor="let route of menu">
+        <div class="side-nav-title">{{ route.title }}</div>
+        <a [routerLink]="fill.path" class="side-nav-item" routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact: true}" *ngFor="let fill of route.children">
+          <span class="fs-24 mr-3"><i [class]="fill.icon"></i></span>
+          {{fill.text}}
+        </a>
+      </ng-container>
+    </nav>
+  </div>
+  <div class="py-4 px-4 mb-5">
+    <router-outlet></router-outlet>
+  </div>
+</div>

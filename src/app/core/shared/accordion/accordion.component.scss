@@ -1,0 +1,29 @@
+@import "components-base";
+
+header.card {
+  cursor: pointer;
+  .icon-handle {
+    transition: transform ease 300ms;
+    color: inherit;
+  }
+  .icone {
+    color: $blueLight;
+    font-family: $icomoon-font-family;
+    &:before {
+      content: $ta-minus-circle;
+    }
+  }
+
+  &.collapsed {
+    .icon-handle {
+      color: $cinza;
+    }
+    .icone {
+      color: $blueLight;
+      font-family: $icomoon-font-family;
+      &:before {
+        content: $ta-plus-circle;
+      }
+    }
+  }
+}

@@ -1,0 +1,449 @@
+.bg-yellow {
+	background-color: #FEF011;
+}
+
+.bg-gray {
+	background-color: #e4e4e4;
+}
+
+.bg-gray-light {
+	background-color: #f1f1f1;
+}
+
+.bg-gray-1 {
+	background-color: #e9ecef;
+}
+
+.text-red {
+	color: #BB2027;
+}
+
+.text-blue {
+	color: #303F9F;
+}
+
+.btn-primary {
+	background-color: #303F9F;
+    border-color: #303F9F;
+}
+
+.border-gray {
+	border-top: solid 1px #3333 !important;
+}
+
+.shadow {
+	box-shadow: 1px 1px 5px #ccc !important;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.mt-n6 {
+	margin-top: -8rem!important;
+}
+
+.btn_contrate_agora {
+	background-color: #ffcb08;
+	width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 3px 0 #815627, 0 6px 4px -2px rgba(0,0,0,.3);
+    border: 1px solid #815627;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 8px;
+    color: #303F9F;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.btn_contrate_agora:hover {
+    background-color: #ffd43d;
+}
+
+header .logo a img {
+    width: 110px;
+}
+
+header .nav-item {
+	font-size: 17px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	margin: 1px;
+}
+
+header .nav-item a {
+	color: #303F9F !important;
+	text-align: center;
+	padding: 10px 12px !important;
+}
+
+header .nav-item.active,
+header .nav-item:hover {
+	background-color: #303F9F;
+	color: #fff !important;
+}
+
+header .nav-item.active {
+	pointer-events: none; 
+	cursor: default;
+}
+
+header .nav-item.active a,
+header .nav-item:hover a {
+	color: #fff !important;
+}
+
+.banner_area_title {
+	background-color: #fef011;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	border-radius: 0 0 12px 12px;
+	text-align: center;
+	z-index: 1000;
+}
+
+.banner_area_title h1 {
+	color: #303f9f;
+	font-size: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 0px 1px 0px #a7a7a7;
+	font-weight: bold;
+	margin-bottom: 0.2rem;
+}
+
+.carousel-caption {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	height: 90%;
+	top: 0;
+	left: 50%;
+	right: unset;
+	bottom: unset;
+	transform: translate(-50%, 0);
+}
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+	width: 35px;
+	height: 35px;
+}
+
+.carousel-indicators {
+	display: none;
+	margin-bottom: 60px;
+}
+
+.banner-default h1,
+.banner-default h2 {
+	color: #FFF;
+	text-shadow: 0px 1px 0px #555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+}
+
+.banner-default h1 {
+	font-size: 46px;
+}
+
+.banner-default h2 {
+	max-width: 350px;
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+.banner-default a {
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
+
+.banner-default a:hover {
+	color: #FEF011;
+}
+
+.btn-download {
+	width: 224px;
+    height: 65px;
+    margin-top: 6px;
+}
+
+.btn-credit-card {
+	width: 140px;
+    margin-top: 6px;
+}
+
+.widget-card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	text-align: justify;
+	border: solid 1px #ddd;
+	border-radius: 4px;
+	box-shadow: 1px 1px 5px #ccc;
+	transition: all 0.1s linear;
+	cursor: pointer;
+}
+
+.widget-card:hover {
+	box-shadow: 3px 3px 10px #ccc;
+}
+
+.widget-youtube h1 {
+	font-size: 50px;
+	font-weight: 100;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.widget-youtube p {
+	font-size: 17px;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+	margin: 0 5px;
+}
+
+footer span {
+	font-size: 15px;
+}
+
+footer .phone {
+	display: none;
+	width: 100%;
+	flex-direction: column;
+	color: #303F9F;
+    font-size: 15px;
+	border-bottom: solid 1px #303F9F;
+	margin-bottom: 20px;
+}
+
+footer .phone span {
+	background-image: url(https://www.rsmbloqueador.com.br/assets/images/icone_telefone.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 18px;
+	padding-left: 22px;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 1550px) { 
+	
+	.mt-n6 {
+		margin-top: -2rem!important;
+	}
+
+	.carousel-control-prev,
+	.carousel-control-next {
+		display: none;
+	}
+
+	.carousel-indicators {
+		display: flex;
+	}
+
+}
+
+@media screen and (max-width: 1200px) { 
+	
+	.banner_area_title h1 {
+		font-size: 30px;
+	}
+
+}
+
+@media screen and (max-width: 991px) {
+
+	.banner_area_title h1 {
+		font-size: 25px;
+	}
+
+	.widget-youtube h1 {
+		font-size: 28px;
+    	font-weight: 300;
+	}
+
+	.widget-youtube p {
+		font-size: 15px;
+		font-weight: 300;
+	}
+	.widget-youtube iframe {
+		height: 300px;
+	}
+
+	footer span {
+		font-size: 12px;
+	}
+
+	footer .phone {
+		display: flex;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	header .logo a img {
+		width: 91px;
+	}
+
+	.banner_area_title {
+		display: none;
+	}
+
+	.banner-default h1 {
+		font-size: 40px;
+	}
+
+	.banner-default h2 {
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+	.btn-download {
+		width: 168px;
+    	height: 50px;
+	}
+
+	.btn-credit-card {
+		width: 100px;
+	}
+
+}
+
+.btn_blue {
+	background-color: #303F9F;
+	padding: 12px 20px 12px 25px;
+	border: 0;
+	border: 1px solid #0f1e80;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
+
+.btn_blue:hover {
+	background-color: #283588 !important;
+}
+
+.btn_blue:active {
+	background-color: #0f1e80 !important;
+}
+
+.btn_blue_disabled {
+	background-color: #0f1e80 !important;
+	cursor: url('https://www.rsmbloqueador.com.br/assets/images/cursor.cur'), default;
+}
+
+.btn_green {
+	background-color: #5ab652;
+	padding: 12px 20px 12px 25px;
+	border: 0;
+	border: 1px solid #3e8838;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
+
+.btn_green:hover {
+	background-color: #559a4f !important;
+}
+
+.btn_green:active {
+	background-color: #3e8838 !important;
+}
+
+.btn_green_disabled {
+	background-color: #3e8838 !important;
+	cursor: url('https://www.rsmbloqueador.com.br/assets/images/cursor.cur'), default;
+}
+
+.msg_input_error {
+	color: #ff0000;
+	font-size: 14px;
+}
+
+.custom-input {
+  	position: relative;
+  	padding-top: 18px;
+  	margin-bottom: 9px;
+}
+
+.custom-input input {
+	width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  	padding: 11px; 
+  	border: 1px solid #ced4da;
+  	border-radius: 4px;
+  	font-size: 15px;
+  	color: #495057;
+}
+
+.custom-input label {
+	position: absolute;
+	left: 15px;
+  	top: 30px;
+  	margin: 0;
+ 	padding: 0;
+ 	cursor: text;
+  	font-size: 15px;
+  	color: #888;
+  	font-weight: normal;
+  	transition: all .2s ease;
+}
+
+.custom-input-off {
+	left: 0 !important;
+	top: 0 !important;
+	font-size: 14px !important;
+}
+
+.custom-input label.active {
+  	top: 0;
+  	left: 0;
+  	font-size: 14px;
+}
+
+.custom-input label.active.focusIn {
+  	color: #303F9F;
+}
+
+.custom-input select {
+	width: 100%;
+  	padding: 10px; 
+  	border: 1px solid #ced4da;
+  	border-radius: 4px;
+  	cursor: pointer;
+  	font-size: 15px;
+  	color: #495057;
+}
+
+.custom-input-error {
+	color: #ff0000 !important;
+	position: initial !important;
+	font-size: 14px !important;
+}

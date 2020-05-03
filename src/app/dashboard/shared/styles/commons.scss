@@ -1,0 +1,59 @@
+@import "components-base";
+
+.dropdown-update {
+  background-color: #fff;
+  left: 50% !important;
+  transform: translate(-50%, 50px) !important;
+  min-width: 235px;
+
+  .wrap-notifications {
+    max-height: 50vh;
+    overflow: auto;
+  }
+
+  a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &::before {
+    background: $cinzaClaro4;
+    right: 45%;
+  }
+
+  .header {
+    background-color: $cinzaClaro4;
+    color: #fff;
+    cursor: default;
+  }
+}
+
+.breadcrumb-item {
+  & + .breadcrumb-item::before {
+    content: $ta-arrow-right;
+    font-family: "taesa-icon" !important;
+    color: #fff;
+  }
+
+  a,
+  &.active {
+    color: #fff;
+  }
+}
+
+.badge {
+  position: relative;
+  top: -12px;
+  left: 3px;
+}
+
+.dropdown-toggle {
+  &:after {
+    display: none;
+  }
+}

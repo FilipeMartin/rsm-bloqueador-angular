@@ -1,0 +1,51 @@
+@import "components-base";
+
+.dashboard-header {
+  background-color: #FEF011;
+  background-size: 100% 100%;
+  grid-area: header;
+  height: 104px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 96px;
+  height: 67px;
+}
+
+
+form {
+  .search-size {
+    max-width: 410px;
+    width: 100%;
+  }
+}
+
+ul {
+  li {
+    &.show {
+      color: $blue;
+    }
+  }
+}
+
+@media (max-width: 1680px) {
+  .form-search-none {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1290px) {
+  .title-size {
+    width: 300px;
+  }
+}
+
+.disable-link {
+  pointer-events: none;
+}
+
+.breadcrumb-item::before {
+  color: $blue !important
+}
