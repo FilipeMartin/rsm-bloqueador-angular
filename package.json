@@ -27,7 +27,7 @@
     "bootstrap": "^4.4.1",
     "lodash": "^4.17.15",
     "lodash-es": "^4.17.15",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "ng2-file-upload": "^1.4.0",
     "ng2-pdf-viewer": "^6.1.1",
     "ngx-input-file": "^8.0.1",
